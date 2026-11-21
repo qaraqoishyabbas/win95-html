@@ -1,0 +1,23 @@
+{
+  "name": "win95",
+  "version": "1.0.0",
+  "description": "Interactive local Windows 95 desktop",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "playwright test",
+    "test:all": "npm test && npm run test:browser"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

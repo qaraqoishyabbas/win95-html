@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Win95 Desktop</title>
+    <link rel="icon" href="./icons/w95_40.ico" />
+    <meta
+      name="description"
+      content="Рабочий стол Windows 95: папки, Блокнот, калькулятор и локальные документы."
+    />
+    <meta name="color-scheme" content="light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap&subset=cyrillic,latin"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div id="ui-root">
+      <main id="desktop" aria-label="Рабочий стол">
+        <div
+          id="desktop-grid"
+          class="desktop-grid"
+          aria-label="Значки рабочего стола"
+        ></div>
+        <div id="windows-layer" class="windows-layer"></div>
+        <div
+          id="start-menu"
+          class="start-menu hidden"
+          aria-label="Меню Пуск"
+        ></div>
+      </main>
+      <footer class="taskbar">
+        <button
+          id="start-button"
+          class="win95-btn start-btn"
+          aria-expanded="false"
+        >
+          <img src="./icons/w95_40.ico" alt="" />Пуск
+        </button>
+        <div
+          id="task-buttons"
+          class="task-buttons"
+          aria-label="Открытые окна"
+        ></div>
+        <button
+          id="clock"
+          class="tray"
+          title="Дата и время"
+          aria-label="Дата и время"
+        >
+          00:00
+        </button>
+      </footer>
+    </div>
+    <div id="command-menu" class="context-menu hidden" role="menu"></div>
+    <dialog id="app-dialog" aria-labelledby="dialog-title"></dialog>
+    <div id="notice" role="status" class="hidden"></div>
+    <section
+      id="shutdown-screen"
+      class="hidden"
+      aria-label="Компьютер выключен"
+    >
+      <p>Теперь питание компьютера можно отключить.</p>
+      <button class="win95-btn" id="power-on">Включить компьютер</button>
+    </section>
+    <input
+      type="file"
+      id="import-file"
+      accept=".txt,text/plain"
+      hidden
+      multiple
+    />
+    <noscript>Для работы рабочего стола включите JavaScript.</noscript>
+    <script src="./src/filesystem.js"></script>
+    <script src="./src/calculator.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
