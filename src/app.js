@@ -25,7 +25,7 @@
     computer: 16,
     bin: 32,
     full: 33,
-    calculator: 47,
+    calculator: "calculator.svg",
     file: 60,
     folder: 4,
     notepad: 60,
@@ -34,7 +34,10 @@
     programs: 37,
     shutdown: 8,
   };
-  const icon = (type) => `./icons/w95_${iconPaths[type] || 4}.ico`;
+  const icon = (type) => {
+    const asset = iconPaths[type] || 4;
+    return `./icons/${typeof asset === "number" ? `w95_${asset}.ico` : asset}`;
+  };
   const image = (type, className = "") =>
     `<img src="${icon(type)}" class="${className}" alt="" draggable="false">`;
   const apps = {

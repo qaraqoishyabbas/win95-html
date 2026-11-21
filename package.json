@@ -4,6 +4,7 @@
   "description": "Interactive local Windows 95 desktop",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:css && node scripts/build.js",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "start": "python3 -m http.server 4173 --bind 127.0.0.1",

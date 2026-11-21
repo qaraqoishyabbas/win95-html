@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Калькулятор</title>
+  <!-- Raised case, dark lower edge and one-pixel highlights. -->
+  <path fill="#000" d="M6 1h20v1h1v28h-1v1H6v-1H5V2h1z"/>
+  <path fill="#808080" d="M6 2h20v28H6z"/>
+  <path fill="#c0c0c0" d="M6 2h19v27H6z"/>
+  <path fill="#fff" d="M6 2h19v1H7v26H6z"/>
+  <!-- Recessed green display. -->
+  <path fill="#808080" d="M8 4h15v7H8z"/>
+  <path fill="#fff" d="M9 5h15v7H9z"/>
+  <path fill="#b6c8ae" d="M9 5h14v6H9z"/>
+  <path fill="#263d2b" d="M19 6h3v1h-3zm0 3h3v1h-3zm0-2h1v2h-1zm2 0h1v2h-1z"/>
+  <!-- Button shadows and top/left bevels. -->
+  <path fill="#404040" d="M8 14h4v3H8zm6 0h4v3h-4zm6 0h4v3h-4zM8 19h4v3H8zm6 0h4v3h-4zm6 0h4v3h-4zM8 24h4v3H8zm6 0h4v3h-4zm6 0h4v3h-4z"/>
+  <path fill="#fff" d="M8 13h4v1H8zm6 0h4v1h-4zm6 0h4v1h-4zM8 18h4v1H8zm6 0h4v1h-4zm6 0h4v1h-4zM8 23h4v1H8zm6 0h4v1h-4zm6 0h4v1h-4z"/>
+  <path fill="#000080" d="M8 14h3v2H8zm6 0h3v2h-3zM8 19h3v2H8zm6 0h3v2h-3zM8 24h3v2H8zm6 0h3v2h-3z"/>
+  <path fill="#800000" d="M20 14h3v2h-3zm0 5h3v2h-3zm0 5h3v2h-3z"/>
+</svg>
